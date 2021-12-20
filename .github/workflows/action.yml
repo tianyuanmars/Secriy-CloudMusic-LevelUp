@@ -25,8 +25,8 @@ jobs:
       - name: Run Script
         env:
           PHONE: ${{13263374077 }}
-          PASSWORD: ${{ passwords }}
-          NOMD5_PASSWORD: ${{ secrets.a4e79a665664c46d31d3e620923d97d5 }}
+          PASSWORD: ${{ secrets.passwords }}
+          NOMD5_PASSWORD: ${{ a4e79a665664c46d31d3e620923d97d5 }}
           PLAYLIST: ${{ 7064316454 }}
           SCKEY: ${{ secrets.SCKEY }}
         run: |
