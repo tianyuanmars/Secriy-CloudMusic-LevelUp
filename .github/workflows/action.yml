@@ -24,10 +24,10 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run Script
         env:
-          PHONE: ${{ secrets.PHONE }}
+          PHONE: ${{ 13263374077 }}
           PASSWORD: ${{ secrets.PASSWORD }}
-          NOMD5_PASSWORD: ${{ secrets.NOMD5_PASSWORD }}
-          PLAYLIST: ${{ secrets.PLAYLIST }}
+          NOMD5_PASSWORD: ${{ a4e79a665664c46d31d3e620923d97d5 }}
+          PLAYLIST: ${{ 7064316454 }}
           SCKEY: ${{ secrets.SCKEY }}
         run: |
           if [ ${NOMD5_PASSWORD} ];then PASSWORD=$(echo -n "${NOMD5_PASSWORD}"|md5sum|cut -d " " -f1); fi
